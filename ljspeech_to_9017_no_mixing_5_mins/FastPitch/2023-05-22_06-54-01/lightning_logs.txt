@@ -1,0 +1,23 @@
+Using 16bit None Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                | Type                              | Params
+--------------------------------------------------------------------------
+0 | mel_loss_fn         | MelLoss                           | 0     
+1 | pitch_loss_fn       | PitchLoss                         | 0     
+2 | duration_loss_fn    | DurationLoss                      | 0     
+3 | energy_loss_fn      | EnergyLoss                        | 0     
+4 | aligner             | AlignmentEncoder                  | 1.0 M 
+5 | forward_sum_loss_fn | ForwardSumLoss                    | 0     
+6 | bin_loss_fn         | BinLoss                           | 0     
+7 | preprocessor        | AudioToMelSpectrogramPreprocessor | 0     
+8 | fastpitch           | FastPitchModule                   | 45.8 M
+--------------------------------------------------------------------------
+45.8 M    Trainable params
+0         Non-trainable params
+45.8 M    Total params
+91.518    Total estimated model params size (MB)
